@@ -1,0 +1,41 @@
+.login-page{
+    width: 500px;
+    margin: auto;
+}
+.login-page > h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.form{
+    background-color: white;
+    padding: 20px;
+}
+
+.form .reg-butt{
+    cursor: pointer;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.form .message{
+    color: black;
+}
+
+.form .message a{
+    text-decoration: none;
+}
+
+.login > h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.login a{
+    text-decoration: none;
+}
+
+.form .login{
+    display: block;
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://kit.fontawesome.com/206b3bb72f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/styles/landing.css" />
+  <link rel="stylesheet" href="./assets/styles/navigation.css" />
+  <link rel="stylesheet" href="./assets/styles/shop.css" />
+  <link rel="stylesheet" href="./assets/styles/modal.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+
+  <!-- Navigation Section -->
+  <nav class="navbar">
+    <div class="nav-icon">
+      <h4>Socials:</h4>
+
+      <a target="_blank" href="socialmedia.html"><i class="fab fa-facebook-f"></i></a>
+      <a target="_blank" href="socialmedia.html"><i class="fab fa-twitter"></i></a>
+      <a target="_blank" href="socialmedia.html"> <i class="fab fa-instagram"></i></a></i>
+      <input type="search" id="search"  placeholder="search" name="search" > 
+      <button type="submit" id="search_button" name="search"><i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+
+    <img src="./assets/img/logo.svg" alt="logo" class="logo" width="50%"  height="50%"/>
+    <ul class="nav-links" id="nav-links">
+      <li class="nav-link"><a target="_blank" href="index.html">Home</a></li>
+      <li class="nav-link"><a target="_blank" href="shop.html#bowl-wrapper">Shop</a></li>
+      <li class="nav-link"><a target="_blank" href="register.html">Login/Register</a></li>
+      <li class="nav-link"><a target="_blank" href="cart.html">MyCart</a></li>
+    </ul>
+
+    <button class="fas fa-bars" onclick="toggleNav()"></button>
+  </nav>
+  <!-- Landing -->
+  
+  <header class="landing">
+    <h1>Pottery<br>Made With Love</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+    Curabitur cursus ex at ipsum auctor auctor.</p>
+    <button><a target="_blank" href="shop.html">View Products</a></button>
+  </header>
+
+  <!-- featured items -->
+  <div class="head-one">
+    <h3>Featured Items:</h3>
+  </div>
+
+  <section class="feature-wrapper" id="feature-wrapper">
+    <div class=features>
+
+      <div>
+        <img src="./assets/img/bowl1.jpg" width="300px" height="220px"/>
+        
+        <h3>Night Skies</h3>
+        <h4>bowl</h4>
+        <p>R400</p>
+        <p><mark>Best Seller</mark></p>
+        <button onclick="toggleModal(1)">View Item</button>
+        <div class="modal_container" id="modal_container1">
+          <div class="modal">
+            <img src="./assets/img/bowl1.jpg" width="200px" height="200px"/>
+            <h1>Night Skies</h1>
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+               Curabitur cursus ex at ipsum auctor auctor.</p>
+            <button onclick="toggleModal()">Close Item</button>
+            <button id="addItem">Add Item</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img src="./assets/img/vase2.jpg" width="300px" height="220px" />
+        
+        <h3>Hollow Lily</h3>
+        <h4>vase</h4>
+        <p>R540</p>
+        <p><mark>Best Seller</mark></p>
+        <button onclick="toggleModal(2)">View Item</button>
+        <div class="modal_container" id="modal_container2">
+          <div class="modal">
+            <img src="./assets/img/vase2.jpg" width="200px" height="200px"/>
+            <h1>Hollow Lily</h1>
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+               Curabitur cursus ex at ipsum auctor auctor.</p>
+            <button onclick="toggleModal()">Close Item</button>
+            <button id="addItem">Add Item</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div> 
+        <img src="./assets/img/cup3.jpg" width="300px" height="220px"/>
+
+        <h3>Misty</h3>
+        <h4>cup</h4>
+        <p>R450</p>
+        <p><mark>Best Seller</mark></p>
+        <button onclick="toggleModal(3)">View Item</button>
+        <div class="modal_container" id="modal_container3">
+          <div class="modal">
+            <img src="./assets/img/cup3.jpg" width="200px" height="200px"/>
+            <h1>Misty</h1>
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+               Curabitur cursus ex at ipsum auctor auctor.</p>
+            <button onclick="toggleModal()">Close Item</button>
+            <button id="addItem">Add Item</button>
+          </div>
+        </div>
+        
+      </div>
+
+      <div>
+        <img src="./assets/img/vase1.jpg" width="300px" height="220px"/>
+
+        <h3>Salty</h3>
+        <h4>vase</h4>
+        <p>R500</p>
+        <p><mark>Best Seller</mark></p>
+        <button onclick="toggleModal(4)">View Item</button>
+        <div class="modal_container" id="modal_container4">
+          <div class="modal">
+            <img src="./assets/img/vase1.jpg" width="200px" height="200px"/>
+            <h1>Salty</h1>
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+               Curabitur cursus ex at ipsum auctor auctor.</p>
+            <button onclick="toggleModal(4)">Close Item</button>
+            <button id="addItem">Add Item</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section-two class="container-wrapper" id="container-wrapper">
+    <div class=container>
+
+      <div>
+        <img src="./assets/img/vase.jpg" width="400px" height="300px"/>
+
+        <div class="overlay">
+          <div class="text">
+            <h3>Handmade Ceramic Vase</h3>
+            <p>Ties any room together with its organic style.artisan crafted 
+            and designed with a unique finish.</p>
+          </div>
+          <button><a target="_blank" href="shop.html">View Items</a></button>
+        </div>
+      </div>
+
+
+      <div>
+        <img src="./assets/img/bowls.jpg" width="400px" height="300px" />
+        <div class="overlay">
+          <div class="text">
+            <h3>Handmade Ceramic Bowls</h3>
+            <p>A stylish organic design, artisan crafted 
+            and designed with a unique finish</p>
+          </div>
+          <button><a target="_blank" href="shop.html">View Items</a></button>
+        </div>
+        
+      </div>
+
+      <div> 
+        <img src="./assets/img/cups.jpg" width="400px" height="300px"/>
+        <div class="overlay">
+          <div class="text">
+            <h3>Handmade Ceramic Cups</h3>
+            <p>The perfect mug for a large serving
+            of your favorite hot or cold beverage</p>
+          </div>
+          <button><a target="_blank" href="shop.html">View Items</a></button>
+        </div>
+
+      </div>
+
+    </div>
+  </section-two>
+  <!-- Carousel -->
+  <div id="carousel">
+    <!-- Carousel Container -->
+    <div id="carousel-container"></div>
+    <!-- Carousel Bullets -->
+    <div id="carousel-bullets"></div>
+    <!-- Carousel Buttons -->
+    <button id="carousel-left" onclick="changeSlide(-1)">
+      <i class="fas fa-angle-left"></i>
+    </button>
+    <button id="carousel-right" onclick="changeSlide(1)">
+      <i class="fas fa-angle-right"></i>
+    </button>
+  </div>
+
+</section-four> 
+
+<!-- footer items -->
+<footer class="footer-style">
+
+  <!-- Contact items -->
+  <div class="contact">
+    <h1>Contact Us</h1>
+    <p>Say Hello, and leave us a message!</p>
+
+    <div class="contact-row">
+
+      <div class="contact-column">
+        <form action=" https://formspree.io/f/xrgonezr/" method="POST" data-netlify="true">  
+          <label for="f-name">First Name</label>
+          <input type="text" id="f-name" name="firstname" placeholder="Your name..">
+          <label for="l-name">Last Name</label>
+          <input type="text" id="ln-ame" name="lastname" placeholder="Your last name..">
+          <label for="e-name">Email</label>
+          <input type="text" id="ln-ame" name="Email" placeholder="Your email address..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="address">
+        <h3>Our Offices</h3>
+        <p>+27 092 262 12</p>
+        <p>naturapottery.co.za</p>
+        <p>34 Bree Street</p>
+        <p>8th Floor The Loft</p>
+        <p>Cape Town</p>
+        <p>8000</p>
+      </div>
+      
+      <div class="socials">
+        <h3>Keep Connected</h3>
+        <p>Twitter</p>
+        <p>Facebook</p>
+        <p>Instagram</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</footer>
+<div class="copyright">
+  <p>2021 @naturapottery. All Rights Reserved</p>
+</div>
+<script src="./assets/scripts/carousel.js"></script>
+<script src="./assets/scripts/modal.js"></script>>
+<script src="./assets/scripts/search.js"></script>>
+</body>
+</html>

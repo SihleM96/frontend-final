@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register</title>
+  <script src="https://kit.fontawesome.com/206b3bb72f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/styles/landing.css" />
+  <link rel="stylesheet" href="./assets/styles/navigation.css" />
+  <link rel="stylesheet" href="./assets/styles/shop.css" />
+  <link rel="stylesheet" href="./assets/styles/modal.css" />
+  <link rel="stylesheet" href="./assets/styles/registration.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+  <!-- Navigation Section -->
+  <nav class="navbar">
+    <div class="nav-icon">
+      <h4>Socials:</h4>
+
+      <a target="_blank" href="socialmedia.html"><i class="fab fa-facebook-f"></i></a>
+      <a target="_blank" href="socialmedia.html"><i class="fab fa-twitter"></i></a>
+      <a target="_blank" href="socialmedia.html"> <i class="fab fa-instagram"></i></a></i>
+      <input type="search" id="search"  placeholder="search" name="search" > 
+      <button type="submit" id="search_button" name="search"><i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+  
+  <img src="./assets/img/logo.svg" alt="logo" class="logo" width="40%"  height="40%"/>
+  <ul class="nav-links" id="nav-links">
+    <li class="nav-link"><a target="_blank" href="index.html">Home</a></li>
+    <li class="nav-link"><a target="_blank" href="shop.html">Shop</a></li>
+    <li class="nav-link"><a target="_blank" href="register.html">Login/Register</a></li>
+    <li class="nav-link"><a target="_blank" href="cart.html">MyCart</a></li>
+  </ul> 
+  <button class="fas fa-bars" onclick="toggleNav()"></button>
+</nav>
+
+<!-- Landing -->
+<header class="landing">
+  <h1>Pottery<br>Made With Love</h1>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+  Curabitur cursus ex at ipsum auctor auctor.</p>
+  <button>View Products</button>
+</header>
+
+<!-- Form items -->
+
+<section>
+ 
+  <div class="login-page">
+    <h1>Register</h1>
+    <div class="form ">
+
+      <form class="register" onsubmit="event.preventDefault(); registerUser();" id="registration">
+        <input type="text" name="firstname" placeholder="First Name"/>
+        <input type="text" name="lastname" placeholder="Last Name"/>
+        <input type="text" name="email" placeholder="Email"/>
+        <input type="text" name="mobile_number" placeholder="Mobile Number"/>
+        <input type="text" name="password" placeholder="Password"/>
+        <!-- <button class="reg-butt">Register</button> -->
+        <input class="button" type="submit" value="register">
+       
+      </form>
+
+    
+      <form onsubmit="event.preventDefault(); loginUser();" id="login" class="form">
+        <h1>Login</h1>
+        <input type="text" placeholder="Email Address"/>
+        <input type="text" placeholder="Password"/>
+        <input class="button" type="submit" value="login">
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- footer items -->
+<footer class="footer-style">
+  
+  <!-- Contact items -->
+  <div class="contact">
+    <h1>Contact Us</h1>
+    <p>Say Hello, and leave us a message!</p>
+    
+    <div class="contact-row">
+      
+      <div class="contact-column">
+        <form action=" https://formspree.io/f/xrgonezr/" method="POST" data-netlify="true">  
+          <label for="f-name">First Name</label>
+          <input type="text" id="f-name" name="firstname" placeholder="Your name..">
+          <label for="l-name">Last Name</label>
+          <input type="text" id="ln-ame" name="lastname" placeholder="Your last name..">
+          <label for="e-name">Email</label>
+          <input type="text" id="ln-ame" name="Email" placeholder="Your email address..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="address">
+        <h3>Our Offices</h3>
+        <p>+27 092 262 12</p>
+        <p>naturapottery.co.za</p>
+        <p>34 Bree Street</p>
+        <p>8th Floor The Loft</p>
+        <p>Cape Town</p>
+        <p>8000</p>
+      </div>
+      
+      <div class="socials">
+        <h3>Keep Connected</h3>
+        <p>twitter</p>
+        <p>facebook</p>
+      </div>
+    </div>
+  </div>
+  
+  
+
+</footer>
+<div class="copyright">
+  <p>2021 @naturapottery. All Rights Reserved</p>
+</div>
+<script src="./assets/scripts/register.js"></script>
+</body>
+
+</html>

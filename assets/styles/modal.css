@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ .modal_container{
+  display: none;
+  position: fixed;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  top: 20%;
+  left: 30%;
+ }
+
+ .modal_container.active{
+   display: block !important;
+ }
+
+ .modal_container h1{
+  border-bottom: 0.5px solid black;
+  margin: 2px 0px;
+ }
+
+ 

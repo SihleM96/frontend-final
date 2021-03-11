@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Sen', sans-serif;
+    font-size: small;
+    color: black;
+  }
+
+
+  .nav-icon{
+
+    background-color: white;
+    color: black;
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border-bottom: solid 0.5px black;
+    margin: 10px;
+    cursor: pointer;
+
+  }
+  .nav-icon > h4{
+ 
+    margin: 0px 10px;
+  
+  }
+
+  #search{
+  
+    background: white;
+    height: 20px;
+    width: 140px;
+    margin-top: 5px;
+    margin-left: 70%;
+    border: 0.5px black solid;
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+
+  
+  
+  .navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 10%;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    flex-direction: column;
+    height: 40vh;
+
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    transition: all 0.3s linear;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    margin: 20px 0px;
+    padding: 10px 0px;
+  }
+  
+  .nav-link a {
+    text-decoration: none;
+    color: black;
+    padding: 60px;
+    transition: color 0.3s ease-in-out;
+ 
+  }
+  
+  .nav-link a:hover {
+    color: rgb(201, 168, 77);
+  }
+
+  /* menu button */ 
+
+  .navbar > button {
+    display: none;
+  }
+  
+  @media screen and (max-width: 535px) {
+    .navbar > button  {
+      display: block;
+      height: 40px;
+      width: 40px;
+    }
+  
+    .nav-links {
+      width: 0px;
+      overflow: hidden;
+      position: fixed;
+      top: 40px;
+      background: black;
+      left: 0;
+      justify-content: center;
+      height: 40px;
+      align-items: center;
+    }
+  }
